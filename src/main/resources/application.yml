@@ -1,0 +1,21 @@
+#服务器端配置
+server:
+  port: 8887
+
+#数据库配置
+spring:
+  datasource:
+    username: 填写自己的
+    password: 填写自己的
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://填写自己的机器:3306/填写自己的库?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
+    # JPA配置
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+
+    # formatSQL
+    properties:
+      hibernate:
+        format_sql: true
