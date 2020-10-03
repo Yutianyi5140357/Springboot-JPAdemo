@@ -1,21 +1,18 @@
-#·şÎñÆ÷¶ËÅäÖÃ
 server:
   port: 8887
 
-#Êı¾İ¿âÅäÖÃ
 spring:
   datasource:
     username: root
     password:
     driver-class-name: com.mysql.cj.jdbc.Driver
     url: jdbc:mysql://47.114.1.58:3306/exam?useUnicode=true&characterEncoding=utf-8&serverTimezone=UTC
-    # JPAÅäÖÃ
+
   jpa:
     hibernate:
       ddl-auto: update
     show-sql: true
 
-    # formatSQL
     properties:
       hibernate:
         format_sql: true
